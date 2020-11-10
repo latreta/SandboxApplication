@@ -6,27 +6,21 @@
 
     <prism:PrismUnityApplication.Resources>
         <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/AppColors.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceDictionary x:Key="Light">
-                    <SolidColorBrush x:Key="TargetBackground" Color="Red"/>
-                    <SolidColorBrush x:Key="TargetBorderBrush" Color="Black"/>
-                    <SolidColorBrush x:Key="Circle4Fill" Color="Blue"/>
-                    <SolidColorBrush x:Key="Circle3Fill" Color="Green"/>
-                    <SolidColorBrush x:Key="Circle2Fill" Color="Yellow"/>
-                    <SolidColorBrush x:Key="Circle1Fill" Color="White"/>
-                    <SolidColorBrush x:Key="CircleStroke" Color="Black"/>
+                    <ResourceDictionary.MergedDictionaries>
+                        <ResourceDictionary Source="Themes/Light/LightTheme.xaml"/>
+                    </ResourceDictionary.MergedDictionaries>
                 </ResourceDictionary>
                 <ResourceDictionary x:Key="Dark">
-                    <SolidColorBrush x:Key="TargetBackground" Color="Black"/>
-                    <SolidColorBrush x:Key="TargetBorderBrush" Color="White"/>
-                    <SolidColorBrush x:Key="Circle4Fill" Color="Black"/>
-                    <SolidColorBrush x:Key="Circle3Fill" Color="Black"/>
-                    <SolidColorBrush x:Key="Circle2Fill" Color="Black"/>
-                    <SolidColorBrush x:Key="Circle1Fill" Color="Black"/>
-                    <SolidColorBrush x:Key="CircleStroke" Color="White"/>
+                    <ResourceDictionary.MergedDictionaries>
+                        <ResourceDictionary Source="Themes/Dark/DarkTheme.xaml"/>
+                    </ResourceDictionary.MergedDictionaries>
                 </ResourceDictionary>
-            </ResourceDictionary.ThemeDictionaries>
+            </ResourceDictionary.ThemeDictionaries>            
         </ResourceDictionary>
     </prism:PrismUnityApplication.Resources>
-
 </prism:PrismUnityApplication>
